@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Chitty - Secure Chat</title>
+    <!-- Developed by 🪙BTC ©️CYBERLORD👑 -->
+    <style>
+        /* ... your full CSS, unchanged ... */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 Cyber Chitty</h1>
+        </div>
+
+        <!-- Authentication Section -->
+        <div id="authSection" class="auth-section">
+            <div id="loginForm">
+                <h2 style="margin-bottom: 30px; color: #333;">Welcome to Cyber Chitty</h2>
+                <div class="input-group">
+                    <label for="phoneNumber">Phone Number</label>
+                    <input type="tel" id="phoneNumber" placeholder="+1234567890" maxlength="15">
+                </div>
+                <div class="input-group">
+                    <label for="displayName">Display Name</label>
+                    <input type="text" id="displayName" placeholder="Your Name" maxlength="30">
+                </div>
+                <button class="btn" onclick="login()">Join Chat</button>
+                <div id="authStatus"></div>
+            </div>
+        </div>
+
+        <!-- Chat Section -->
+        <div id="chatSection" class="chat-section">
+            <div class="chat-header">
+                <div class="user-info">
+                    <span id="currentUser"></span>
+                </div>
+                <button class="btn logout-btn" onclick="logout()">Logout</button>
+            </div>
+            
+            <div class="chat-main">
+                <div class="online-users">
+                    <h3>Online Users</h3>
+                    <div id="usersList"></div>
+                </div>
+                
+                <div class="chat-area">
+                    <div id="messages" class="messages"></div>
+                    
+                    <div class="message-input">
+                        <input type="text" id="messageInput" placeholder="Type your message..." maxlength="500">
+                        <button class="btn send-btn" onclick="sendMessage()">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Developer Credit -->
+        <div style="text-align:center; padding:15px; color:#333; font-size:14px;">
+            Developed by <strong>🪙BTC ©️CYBERLORD👑</strong>
+        </div>
+    </div>
+    <script>
+        // ... your full JS, unchanged ...
+    </script>
+</body>
+</html>
